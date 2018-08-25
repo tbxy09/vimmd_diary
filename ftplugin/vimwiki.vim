@@ -388,7 +388,7 @@ nnoremap <silent><script><buffer>
       \ <Plug>VimwikiTabnewLink :VimwikiTabnewLink<CR>
 
 if !hasmapto('<Plug>VimwikiGoBackLink')
-  nmap <silent><buffer> <BS> <Plug>VimwikiGoBackLink
+  nmap <silent><buffer> J <Plug>VimwikiGoBackLink
 endif
 nnoremap <silent><script><buffer>
       \ <Plug>VimwikiGoBackLink :VimwikiGoBackLink<CR>
