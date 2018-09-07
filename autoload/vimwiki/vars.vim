@@ -191,7 +191,7 @@ function! s:populate_wikilocal_options()
         \ 'diary_index': 'diary',
         \ 'diary_rel_path': 'diary/',
         \ 'diary_sort': 'desc',
-        \ 'ext': '.wiki',
+        \ 'ext': '.md',
         \ 'index': 'index',
         \ 'list_margin': -1,
         \ 'maxhi': 0,

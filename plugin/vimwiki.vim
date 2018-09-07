@@ -85,7 +85,7 @@ function! s:setup_buffer_enter() "{{{
   endif
 
   if &filetype != 'vimwiki'
-    setfiletype vimwiki
+    setfiletype markdown
   endif
 
   call s:set_global_options()
@@ -207,6 +207,7 @@ endif "}}}
 let s:known_extensions = s:vimwiki_get_known_extensions()
 
 if index(s:known_extensions, '.wiki') > -1
+	echo s:known_extensions
   augroup filetypedetect
     " clear FlexWiki's stuff
     au! * *.wiki

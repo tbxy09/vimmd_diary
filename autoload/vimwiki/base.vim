@@ -313,6 +313,7 @@ function! vimwiki#base#generate_links() "{{{
   let lines = []
 
   let links = vimwiki#base#get_wikilinks(vimwiki#vars#get_bufferlocal('wiki_nr'), 0)
+  " let links = vimwiki#base#get_wikilinks(vimwiki#vars#get_bufferlocal('markdown_refs'), 0)
   call sort(links)
 
   let bullet = repeat(' ', vimwiki#lst#get_list_margin()).

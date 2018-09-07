@@ -418,13 +418,13 @@ nnoremap <silent><script><buffer>
       \ <Plug>VimwikiRenameLink :VimwikiRenameLink<CR>
 
 if !hasmapto('<Plug>VimwikiDiaryNextDay')
-  nmap <silent><buffer> <C-Down> <Plug>VimwikiDiaryNextDay
+  nmap <silent><buffer> <C-B> <Plug>VimwikiDiaryNextDay
 endif
 nnoremap <silent><script><buffer>
       \ <Plug>VimwikiDiaryNextDay :VimwikiDiaryNextDay<CR>
 
 if !hasmapto('<Plug>VimwikiDiaryPrevDay')
-  nmap <silent><buffer> <C-Up> <Plug>VimwikiDiaryPrevDay
+  nmap <silent><buffer> <C-H> <Plug>VimwikiDiaryPrevDay
 endif
 nnoremap <silent><script><buffer>
       \ <Plug>VimwikiDiaryPrevDay :VimwikiDiaryPrevDay<CR>

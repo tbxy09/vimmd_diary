@@ -210,7 +210,7 @@ execute 'syntax match VimwikiTodo /'. vimwiki#vars#get_global('rxTodo') .'/'
 " main syntax groups {{{
 
 " Tables
-syntax match VimwikiTableRow /^\s*|.\+|\s*$/ 
+syntax match VimwikiTableRow /^\s*|.\+|\s*$/
       \ transparent contains=VimwikiCellSeparator,
                            \ VimwikiLinkT,
                            \ VimwikiNoExistsLinkT,
@@ -226,7 +226,7 @@ syntax match VimwikiTableRow /^\s*|.\+|\s*$/
                            \ VimwikiCodeT,
                            \ VimwikiEqInT,
                            \ @Spell
-syntax match VimwikiCellSeparator 
+syntax match VimwikiCellSeparator
       \ /\%(|\)\|\%(-\@<=+\-\@=\)\|\%([|+]\@<=-\+\)/ contained
 
 " Lists
@@ -322,7 +322,7 @@ else
 endif
 "}}}
 
-" syntax group highlighting "{{{ 
+" syntax group highlighting "{{{
 
 hi def link VimwikiMarkers Normal
 
@@ -426,7 +426,7 @@ if !empty(s:nested)
   endfor
 endif
 " LaTeX
-call vimwiki#base#nested_syntax('tex', 
+call vimwiki#base#nested_syntax('tex',
       \ vimwiki#vars#get_syntaxlocal('rxMathStart').'\%(.*[[:blank:][:punct:]]\)\?'.
       \ '\%([[:blank:][:punct:]].*\)\?',
       \ vimwiki#vars#get_syntaxlocal('rxMathEnd'), 'VimwikiMath')
